@@ -1,0 +1,261 @@
+/* Couleurs */
+.color-bg {
+    background-color: #f3e9f1;
+}
+.bgbody {
+    background-color: rgb(247, 240, 231);
+}
+
+/* Fonts */
+
+.font-logo {
+    font-family: 'Yellowtail', cursive;
+}
+
+/* Flex */
+
+.flex {
+    display: flex;
+}
+
+/* All */
+
+body, main {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.sigle {
+    padding-top: 4px;
+    font-size: 1.2em;
+}
+
+.navig {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-shop {
+    height: 36px;
+    width: 36px;
+    padding: 0px 1px 3px 3px;
+    font-size: 1.3em;
+    color: black;
+    border: 2px teal solid; 
+    border-radius: 5px;
+    transition: 120ms ease-in-out;
+}
+
+.icon-shop:hover {
+    color: rgb(224, 194, 57);
+    border-color: rgb(224, 194, 57);
+    cursor: pointer;
+}
+
+.titre {
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    height: 60px;
+    text-align: center;
+    background-color: rgb(199, 164, 99);
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.produit {
+    max-width: 100%;
+}
+
+/* Les produits */
+
+
+.products {
+    width: 200px;
+    height: 300px;
+    margin: auto;
+}
+.img {
+    width: 100%;
+    max-width: 200px;
+    height: 70%;
+    border: 2px black solid;
+}
+.desc {
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.prix {
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(199, 164, 99);
+    margin-top: 180px;
+
+}
+ul {
+    list-style:none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8px;
+}
+
+/* Pages produit */
+
+.bloc-produit {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 500px;
+}
+.products-produit {
+    width: 100%;
+}
+.img-produit {
+    width: 80%;
+    height: 56vh;
+    border: 2px black solid;
+}
+.choix {
+    width: 50%;
+}
+
+.container-products-produit {
+    width: 50%;
+}
+.desc-produit, .prix-produit, .setcolor, .quantite, .ajouter {
+    width: 100%;
+    height: 98px;
+    text-align: center;
+}
+.prix-produit {
+    padding-top: 40px;
+    font-weight: bold;
+}
+.quantite {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    justify-content: space-around;
+    font-size: 1.4em;
+}
+.nb-quantite {
+}
+.ajouter {
+    padding-top: 40px;
+}
+.btn-addtobasket {
+    border-radius: 10px;
+}
+.footer-produit {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(199, 164, 99);
+    margin-top: 140px;
+}
+
+/* Page panier */
+
+.conteneur-panier {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+}
+.articles, .finaliser {
+    width: 50%;
+    height: 100%;
+}
+.mini {
+    width: 30px;
+    height: 38px;
+    margin-top: 1px;
+}
+.melmartN, .ridibeargN, .sallyN, .ridibearsN, .melmartM, .ridibeargM, .sallyM, .ridibearsM {
+    border: 1px grey solid;
+    box-shadow: 10px 5px 5px grey;
+    height: 42px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 6px;
+}
+.noir {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    margin-top: 10px;
+}
+.marron {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(165, 108, 42);
+    margin-top: 10px;
+}
+.number {
+    margin-top: 8px;
+}
+.nbtotal, .prixtotal, .achat {
+    width: 100%;
+    height: 132px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.btn-achat {
+    height: 60px;
+    margin-top: 30px;
+}
+.btn-sup {
+    height: 30px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    border-radius: 10px;
+}
+.container-form {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.footer-panier {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(199, 164, 99);
+    margin-top: 140px;
+}
+.remerciement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.prixfin {
+    font-size: 1.4em;
+    margin: auto;
+}
+.montant {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-merci {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(199, 164, 99);
+    margin-top: 236px;
+}
+
+
+
