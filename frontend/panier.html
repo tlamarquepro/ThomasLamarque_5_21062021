@@ -47,38 +47,32 @@
       </div>
     </section>
     <section class="container-form">
-      <form>
+      <form id="formorder" name="formorder">
         <div class="form-row">
           <div class="form-group col-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4">
+            <label for="inputPrenom">Prénom</label>
+            <input name="inputPrenom" type="text" class="form-control" id="inputPrenom" value="">
           </div>
           <div class="form-group col-6">
-            <label for="inputPassword4">Mot de passe</label>
-            <input type="password" class="form-control" id="inputPassword4">
+            <label for="inputNom">Nom</label>
+            <input name="inputNom" type="text" class="form-control" id="inputNom" value="">
           </div>
         </div>
         <div class="form-group">
-          <label for="inputAddress">Addresse</label>
-          <input type="text" class="form-control" id="inputAddress">
+          <label for="inputAdresse">Addresse</label>
+          <input name="inputAdresse" type="text" class="form-control" id="inputAdresse" value="">
         </div>
         <div class="form-row">
           <div class="form-group col-6">
-            <label for="inputCity">Ville</label>
-            <input type="text" class="form-control" id="inputCity">
+            <label for="inputVille">Ville</label>
+            <input name="inputVille" type="text" class="form-control" id="inputVille" value="">
           </div>
-          <div class="form-group col-4">
-            <label for="inputState">Pays</label>
-            <select id="inputState" class="form-control">
-              <option selected>Choisir...</option>
-              <option>France</option>
-            </select>
-          </div>
-          <div class="form-group col-2">
-            <label for="inputZip">Code postal</label>
-            <input type="text" class="form-control" id="inputZip">
+          <div class="form-group col-6">
+            <label for="inputEmail">Email</label>
+            <input name="inputEmail" type="email" class="form-control" id="inputEmail" value="">
           </div>
         </div>
+        <div class="achat"><input type="submit" class="btn btn-dark btn-lg btn-achat">Acheter</input></div>
       </form>
     </section>
     <section class="conteneur-panier">
@@ -88,7 +82,6 @@
       <div class="finaliser">
         <div class="nbtotal">Panier : 0</div>
         <div class="prixtotal">Total : 0</div>
-        <div class="achat"><button class="btn btn-dark btn-lg btn-achat">Acheter</button></div>
       </div>
     </section>
   </main>

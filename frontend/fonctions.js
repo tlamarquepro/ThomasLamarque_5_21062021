@@ -48,6 +48,23 @@ async function getTeddyById(id) {
   }
 }
 
+// Fonction commande
+
+async function postOrder(commande) {
+  try {
+    let result = await fetch(` ${apiUrl}/order`, {
+      method: "POST",
+      // headers: {
+      //   "Content-Type": "application/json",
+      // },
+      body: commande,
+    });
+    let data = await result.json();
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+  }
+}
 // Fonction affichage des ours dans le DOM page produit
 
 function displayTeddy(teddy) {

@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
       nomTeddy = document.querySelector(".nom-produit");
       priceTeddy = document.querySelector(".tedPrice");
       colorTeddy = document.getElementById("selectColor");
-  
 
       let flecheGauche = document.querySelector(".leftarrow");
       let flecheDroite = document.querySelector(".rightarrow");
@@ -33,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
       flecheGauche.addEventListener("click", () => {
         if (quantiteDesire.textContent > 1) {
           quantiteDesire.textContent = parseInt(quantiteDesire.textContent) - 1;
-        };
+        }
       });
     });
 });
@@ -47,9 +46,10 @@ const addToCart = () => {
     price: priceTeddy.textContent,
     color: colorTeddy.value,
     qty: quantiteDesire.textContent,
-    imageUrl: teddyImg
+    imageUrl: teddyImg,
   };
   addItemToCart(teddy);
+  refresh();
 };
 
 // Appel de la fonction de quantité panier

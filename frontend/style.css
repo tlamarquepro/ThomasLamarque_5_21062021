@@ -90,6 +90,10 @@ nav {
 .produit {
   max-width: 100%;
 }
+.btn-accueil {
+  width: 10%;
+  background-color: ;
+}
 
 /* Page index */
 
@@ -103,8 +107,9 @@ nav {
 .products {
   width: 48%;
   height: 250px;
-  margin-bottom: 100px;
-  border: 1px black solid;
+  margin-bottom: 50px;
+  border: 2px black solid;
+  border-radius: 5px;
   display: flex;
 }
 .product-cage {
@@ -375,7 +380,7 @@ ul {
   .products {
     width: 95%;
     height: 250px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     display: flex;
   }
   .product-cage {
@@ -627,7 +632,6 @@ ul {
     font-size: 0.9em;
     padding-top: 5px;
     padding-left: 5px;
-    border: 1px black solid;
   }
 }
 
