@@ -35,6 +35,7 @@
             class="d-inline-block align-text-top">
           <div class="sigle font-logo">Orinoco</div>
         </a>
+        <a href="./index.html" class="btn-accueil">Accueil</a>
       </div>
     </nav>
     <!-- end of navbar -->
@@ -47,32 +48,37 @@
       </div>
     </section>
     <section class="container-form">
-      <form id="formorder" name="formorder">
+      <form id="formorder" name="formorder" novalidate>
         <div class="form-row">
           <div class="form-group col-6">
             <label for="inputPrenom">Prénom</label>
             <input name="inputPrenom" type="text" class="form-control" id="inputPrenom" value="">
+            <small class="checksurname"></small>
           </div>
           <div class="form-group col-6">
             <label for="inputNom">Nom</label>
             <input name="inputNom" type="text" class="form-control" id="inputNom" value="">
-          </div>
+            <small class="checklastname"></small>
+          </div><br />
         </div>
         <div class="form-group">
           <label for="inputAdresse">Addresse</label>
           <input name="inputAdresse" type="text" class="form-control" id="inputAdresse" value="">
-        </div>
+          <small class="checkadress"></small>
+        </div><br />
         <div class="form-row">
           <div class="form-group col-6">
             <label for="inputVille">Ville</label>
             <input name="inputVille" type="text" class="form-control" id="inputVille" value="">
-          </div>
+            <small class="checkcity"></small>
+          </div><br />
           <div class="form-group col-6">
             <label for="inputEmail">Email</label>
             <input name="inputEmail" type="email" class="form-control" id="inputEmail" value="">
+            <small class="checkmail"></small>
           </div>
         </div>
-        <div class="achat"><input type="submit" class="btn btn-dark btn-lg btn-achat">Acheter</input></div>
+        <div class="achat"><input type="submit" class="btn btn-dark btn-lg btn-achat" value="Acheter"></input></div>
       </form>
     </section>
     <section class="conteneur-panier">

@@ -1,3 +1,6 @@
+// Clear le localstorage
+initStorage()
+
 let onlyOneProductContainer = document.querySelector(".bloc-produit");
 // Page produit
 let nomTeddy = "";

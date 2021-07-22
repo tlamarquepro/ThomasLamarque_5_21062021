@@ -1,3 +1,12 @@
+// Fonction clear le localStorage
+
+function initStorage() {
+  const recap = JSON.parse(localStorage.getItem("recapOrder"));
+  if (recap) {
+    localStorage.clear();
+  }
+}
+
 // Liaison a l'API
 const apiUrl = "http://localhost:3000/api/teddies";
 async function getTeddies() {
@@ -11,7 +20,7 @@ async function getTeddies() {
     console.log(error);
   }
 }
-//
+
 // Fonction pour afficher les teddy sur l'index
 
 function displayTeddies(teddies) {
@@ -52,15 +61,15 @@ async function getTeddyById(id) {
 
 async function postOrder(commande) {
   try {
-    let result = await fetch(` ${apiUrl}/order`, {
+    let result = await fetch(apiUrl + "/order", {
       method: "POST",
-      // headers: {
-      //   "Content-Type": "application/json",
-      // },
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: commande,
     });
     let data = await result.json();
-    console.log(data);
+    return data;
   } catch (error) {
     console.log(error);
   }
@@ -145,9 +154,10 @@ let qtyCartPlace = document.querySelector(".nbtotal");
 function productQuantity() {
   let quantity = 0;
   let cart = JSON.parse(localStorage.getItem("Bag"));
-  cart.forEach((ted) => {
-    quantity += parseInt(ted.qty);
-  });
+  if (cart)
+    cart.forEach((ted) => {
+      quantity += parseInt(ted.qty);
+    });
   console.log(quantity);
   numberPlace.textContent = quantity;
 }
@@ -157,10 +167,12 @@ function productQuantity() {
 function productQuantityCart() {
   let quantity = 0;
   let cart = JSON.parse(localStorage.getItem("Bag"));
-  cart.forEach((ted) => {
-    quantity += parseInt(ted.qty);
-  });
-  console.log(quantity);
+  if (cart) {
+    cart.forEach((ted) => {
+      quantity += parseInt(ted.qty);
+    });
+  }
+  // console.log(quantity);
   qtyCartPlace.textContent = `Quantité : ${quantity}`;
 }
 
@@ -183,10 +195,11 @@ let endPrice = document.querySelector(".prixfin");
 function priceCart() {
   let price = 0;
   let cart = JSON.parse(localStorage.getItem("Bag"));
-  cart.forEach((ted) => {
-    price += parseInt(ted.price * ted.qty);
-  });
-  console.log(price);
+  if (cart)
+    cart.forEach((ted) => {
+      price += parseInt(ted.price * ted.qty);
+    });
+  // console.log(price);
   totalPrice.textContent = `${price} €`;
 }
 

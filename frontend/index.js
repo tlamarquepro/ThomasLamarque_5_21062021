@@ -1,4 +1,5 @@
-// Ciblage des éléments
+// Clear le localstorage
+initStorage()
 
 // Index
 let productsContainer = document.querySelector(".container-products");
